@@ -1,0 +1,96 @@
+body {
+    background-color: #433F46;
+    font-family: "Quadrant Text Mono", monospace;
+    color: #E8DED5;
+    margin: 0;
+}
+
+
+/* عنوان */
+
+p {
+    text-align: center;
+    margin: 50px 0;
+}
+
+
+/* گالری */
+
+.sketch-grid {
+    width: 80%;
+    margin: auto;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+    border: 0.5px solid #E8DED5;
+}
+
+
+/* هر خانه */
+
+.sketch {
+    height: 300px;
+    padding: 20px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border: 0.5px solid #E8DED5;
+    box-sizing: border-box;
+
+    overflow: hidden;
+}
+
+
+/* عکس */
+
+.sketch img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    display: block;
+}
+
+
+/* لینک برگشت */
+
+.back {
+    display: block;
+    text-align: center;
+
+    margin: 40px;
+
+    color: white;
+    text-decoration: none;
+}
+
+
+@media (max-width: 600px) {
+
+    p {
+        font-size: 28px;
+        margin: 30px 0;
+    }
+
+    .sketch-grid {
+        width: 92%;
+        grid-template-columns: 1fr;
+    }
+
+    .sketch {
+        height: 280px;
+        padding: 15px;
+    }
+
+    .sketch img {
+        max-width: 100%;
+        max-height: 100%;
+    }
+
+    .back {
+        margin: 30px;
+        font-size: 14px;
+    }
+}
